@@ -21,6 +21,7 @@ Giai đoạn đề cương:
 - Phân tích và thiết kế hệ thống.
 - Tìm hiểu về công nghệ: ngôn ngữ python, framework Django và các công nghệ liên quan
 - Thực hiện demo
+
 Giai đoạn luận văn:		
 - Xây dựng website hoàn chỉnh
 - Đánh giá hệ thống

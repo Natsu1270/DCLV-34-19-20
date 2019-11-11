@@ -15,3 +15,13 @@ Yêu cầu:
 + Gặp mặt thầy 1-2 tuần/lần
 + Tiến độ: tuần thứ 6 hoặc 7 là sẽ có sản phẩm cho thầy
 + Tác phong nghiêm túc, hộ trợ lẫn nhau, tự chủ
+
+Giai đoạn đề cương:
+- Tìm hiểu nghiệp vụ.
+- Phân tích và thiết kế hệ thống.
+- Tìm hiểu về công nghệ: ngôn ngữ python, framework Django và các công nghệ liên quan
+- Thực hiện demo
+Giai đoạn luận văn:		
+- Xây dựng website hoàn chỉnh
+- Đánh giá hệ thống
+

@@ -1,7 +1,6 @@
 # DCLV-34-19-20
-**Xây dựng website quản lý các khóa học trực tuyến cho một trung tâm đào tạo.**
+## **Xây dựng website quản lý các khóa học trực tuyến cho một trung tâm đào tạo.**
 
-SVTH:
 
 __Nội Dung__:
 

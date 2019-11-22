@@ -1,0 +1,28 @@
+Công nghệ 
+
+Python: 
+Python là ngôn ngữ lập trình bậc cao, được tạo ra bởi Guido van Rossum và phát hành lần đầu vào năm 1991.
+Python được thiết kế hướng đối tượng với cú pháp đơn giản. Python có 2 phiên bản phổ biến là python 2 và python 3, phiên bản mới nhất là python 3.8.
+Trong những năm gần đây python đang nổi lên là ngôn ngữ lập trình hot và được sử dụng trong nhiều lĩnh vực đặc biệt là lập trình ứng dụng web, khoa học và tính toán (Machine Learning, Deep Learning, AI).
+Qua quá trình tìm hiểu, tiếp xúc và thực hành nhóm chúng em đã biết cách sử dụng tốt ngôn ngữ python, như biết sử dụng các cấu trúc dữ liệu (list, dict, tupe), lập trình hướng đối tượng, lập trình hàm với python
+
+Django: 
+Django là framework mã nguồn mở và miến phí sử dụng ngôn ngữ python dùng trong lập trình ứng dụng web được sử dụng rộng rãi hiện nay, nó bao gồm tập hợp nhiều thành phần giúp việc phát triển ứng dụng web được nhanh và dễ dàng hơn.
+Sau quá trình tìm hiểu và thực hành thì nhóm chúng em đã hiểu được tổng quát cách hoạt động của framework, thực hiện được một số website đơn giản bằng Django, sử dụng virtualevn do python cung cấp để chạy webapp cũng như thực hiện việc testing cho ứng dụng web.
+
+Database: 
+PostgreSQL là hệ quản trị cơ sở dữ liệu quan hệ mã nguồn mở, mạnh mẽ và được sử dụng phổ biến hiện nay đặc biệt là với Django PostgreSQL là DBMS được ưa chuộng khi phát triển ứng dụng web.
+Đây là DMBS mạnh mẽ kế thừa từ ngôn ngữ SQL kết hợp với nhiều tính năng giúp cho việc lưu trữ an toàn và mở rộng với những khối lượng data lớn và phức tạp. 
+Sau khi tìm hiểu nhóm chúng em nhận thấy PostgreSQL phù hợp với yêu cầu với đề tài luận văn nên chúng em quyết định sử dụng PostgreSQL để quản lý database.
+
+Front-end: Chúng em sử dụng template system của Django kết hợp Boostrap 4 (Framework css mã nguồn mở), Jquery (Thư viện javascript), và các thư viện khác để dễ dàng phát triển phần giao diện cho ứng dụng web.
+
+Các công nghệ khác:
++ Github: Quản lý source code
++ Asana: Quản lý task
++ Figma, Photoshop: Thiết kế UI/UX
++ NPM: quản lý package
++ Travis: build python project
++ Docker: Deploy
++ Virtualenv: Môi trường phát triển ảo
++ Pytest: Testing

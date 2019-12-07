@@ -1,0 +1,12 @@
+SET search_path TO TrainingSystem;
+CREATE TABLE ProgramTocACL (
+  ProgramTocACLId BIGSERIAL NOT NULL PRIMARY KEY,
+  ProgramTocId BIGINT NOT NULL,
+  Role VARCHAR(10) NOT NULL,
+  Accessible BOOLEAN NOT NULL DEFAULT TRUE,
+  CreatedDate TIMESTAMP NOT NULL,
+  ModifiedDate TIMESTAMP,
+  UNIQUE(Role, ProgramTocId)
+);
+
+ALTER TABLE ProgramTocACL ADD CONSTRAINT FK_ProgramTocACL_Toc FOREIGN KEY (ProgramTocId) REFERENCES ProgramToc(ProgramTocId) ON DELETE CASCADE;

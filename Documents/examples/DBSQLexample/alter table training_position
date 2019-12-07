@@ -1,0 +1,2 @@
+alter  table  training_position
+    add column DepartmentId bigint constraint fk_position_department references training_department(DepartmentId)

@@ -1,0 +1,10 @@
+create table fcvplatform.training_multiaccount
+(
+  id         bigserial not null
+    constraint training_multiaccount_id_pk
+    primary key,
+  userid     bigint    not null,
+  new_userid bigint    not null,
+  constraint training_multiaccount_userid_new_userid_pk
+  unique (userid, new_userid)
+);

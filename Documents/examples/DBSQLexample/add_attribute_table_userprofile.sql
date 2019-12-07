@@ -1,0 +1,1 @@
+ALTER TABLE fcvplatform.training_userprofile ADD usermanagement int DEFAULT 0 NULL;

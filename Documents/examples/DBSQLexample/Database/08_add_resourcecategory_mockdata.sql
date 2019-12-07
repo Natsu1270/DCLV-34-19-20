@@ -1,0 +1,10 @@
+set search_path to TrainingSystem;
+insert into resourcecategory(programid, name, description, sortorder) values(1, 'CATEGORY-01', 'Testing category 01', 1);
+insert into resourcecategory(programid, name, description, sortorder) values(2, 'CATEGORY-02', 'Testing category 02', 2);
+insert into resourcecategory(programid, name, description, sortorder) values(3, 'CATEGORY-03', 'Testing category 03', 3);
+insert into resourcecategory(programid, name, description, sortorder) values(4, 'CATEGORY-04', 'Testing category 04', 4);
+insert into resourcecategory(programid, name, description, sortorder) values(5, 'CATEGORY-05', 'Testing category 05', 5);
+insert into resourcecategory(programid, name, description, sortorder) values(6, 'CATEGORY-06', 'Testing category 06', 6);
+insert into resourcecategory(programid, name, description, sortorder) values(7, 'CATEGORY-07', 'Testing category 07', 7);
+insert into resourcecategory(programid, name, description, sortorder) values(8, 'CATEGORY-08', 'Testing category 08', 8);
+insert into resourcecategory(programid, name, description, sortorder) values(9, 'CATEGORY-09', 'Testing category 09', 9);

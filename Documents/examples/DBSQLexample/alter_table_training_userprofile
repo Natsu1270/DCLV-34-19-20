@@ -1,0 +1,56 @@
+alter table fcvplatform.training_userprofile
+add column FunctionId bigint  constraint fk_userprofile_function references training_function(FunctionId),
+add column SubFunctionId bigint  constraint fk_userprofile_subfunction references training_subfunction(SubFunctionId),
+add column SubFunctionGroupId bigint  constraint fk_userprofile_subfunctiongroup references training_subfunctiongroup(SubFunctionGroupId);
+
+
+
+CREATE TABLE Training_UserFunction
+(
+  userfunctionid   BIGSERIAL NOT NULL
+    CONSTRAINT training_userfunctionid_pkey
+    PRIMARY KEY,
+  userprofileid      BIGINT    NOT NULL,
+  functionid       BIGINT    NOT NULL
+    CONSTRAINT fk_training_userfunction_function
+    REFERENCES training_function
+    ON DELETE CASCADE,
+  CONSTRAINT training_userfunction_userprofileid_functionid_key
+  UNIQUE (userprofileid, functionid)
+);
+
+CREATE TABLE Training_UserSubFunction
+(
+  usersubfunctionid   BIGSERIAL NOT NULL
+    CONSTRAINT training_usersubfunctionid_pkey
+    PRIMARY KEY,
+  userprofileid      BIGINT    NOT NULL,
+  subfunctionid       BIGINT    NOT NULL
+    CONSTRAINT fk_training_userfunction_subfunction
+    REFERENCES training_subfunction
+    ON DELETE CASCADE,
+  CONSTRAINT training_userfunction_userprofileid_subfunctionid_key
+  UNIQUE (userprofileid, subfunctionid)
+);
+
+
+CREATE TABLE Training_UserSubFunctionGroup
+(
+  usersubfunctiongroupid   BIGSERIAL NOT NULL
+    CONSTRAINT training_usersubfunctiongroupid_pkey
+    PRIMARY KEY,
+  userprofileid      BIGINT    NOT NULL,
+  subfunctiongroupid       BIGINT    NOT NULL
+    CONSTRAINT fk_training_userfunction_subfunctiongroup
+    REFERENCES training_subfunctiongroup
+    ON DELETE CASCADE,
+  CONSTRAINT training_userfunction_userprofileid_subfunctiongroupid_key
+  UNIQUE (userprofileid, subfunctiongroupid)
+);
+
+CREATE TABLE training_program_function
+(
+  programfunctionid BIGSERIAL NOT NULL,
+  programid           BIGINT    NOT NULL,
+  functionid        BIGINT    NOT NULL
+);

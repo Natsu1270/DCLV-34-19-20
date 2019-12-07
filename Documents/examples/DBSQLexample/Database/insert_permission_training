@@ -1,0 +1,12 @@
+insert into permission (code, name, description, createddate) VALUES ('LMS_ROLE_MANAGE', 'LMS_ROLE_MANAGE', 'Quản lý vai trò và quyền người dùng', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_POSITION_MANAGE', 'LMS_POSITION_MANAGE', 'Quản lý chức vụ', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_CHANEL_MANAGE', 'LMS_CHANEL_MANAGE', 'Quản lý chanel', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_DEPARTMENT_MANAGE', 'LMS_DEPARTMENT_MANAGE', 'Quản lý phòng ban', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_FUNCTION_MANAGE', 'LMS_FUNCTION_MANAGE', 'Quản lý chức năng', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_SUB_FUNCTION_MANAGE', 'LMS_SUB_FUNCTION_MANAGE', 'Quản lý chức năng con', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_SUB_FUNCTION_GROUP_MANAGE', 'LMS_SUB_FUNCTION_GROUP_MANAGE', 'Quản lý nhóm chức năng con', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_LEARNER_MANAGE', 'LMS_LEARNER_MANAGE', 'Quản lý học viên', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_PROGRAM_MANAGE', 'LMS_PROGRAM_MANAGE', 'Quản lý chương trình học', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_TRAINING_MANAGE', 'LMS_TRAINING_MANAGE', 'Quản lý khóa học', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_ASSESSENT_MANAGE', 'LMS_ASSESSENT_MANAGE', 'Quản lý bài kiểm tra', now());
+insert into permission (code, name, description, createddate) VALUES ('LMS_REPORT_MANAGE', 'LMS_REPORT_MANAGE', 'Quản lý báo cáo', now());

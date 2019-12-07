@@ -1,0 +1,61 @@
+create table training_region
+(
+  regionid    bigserial         not null
+    constraint training_region_pkey
+    primary key,
+  name        varchar(255)      not null
+    constraint training_region_key
+    unique,
+  description varchar(512),
+  sortorder   integer default 0 not null,
+  status      integer default 1,
+  ismt        boolean,
+  issyn       integer default 1
+);
+ALTER TABLE fcvplatform.training_region RENAME COLUMN issyn TO issync;
+SELECT setval('training_region_regionid_seq', 50, true);
+alter table fcvplatform.training_userprofile   drop constraint fk_training_profile_region;
+ALTER TABLE fcvplatform.training_userprofile ADD CONSTRAINT fk_training_userprofile_training_region FOREIGN KEY (regionid) REFERENCES fcvplatform.training_region(regionid) ON DELETE CASCADE ;
+
+----Insert data from region into training_region
+INSERT INTO fcvplatform.training_region (
+    regionid,
+    name,
+    description,
+    sortorder,
+    status,
+    ismt
+    )
+SELECT
+       regionid,
+       name,
+       description,
+       sortorder,
+       status,
+       ismt
+FROM
+     fcvplatform.region
+
+
+create table training_userprofile_channel
+(
+  userprofilechannelid bigserial not null
+    constraint training_userprofile_channel_pkey
+    primary key,
+  userprofileid        bigint,
+  channelid            bigint,
+  constraint training_userprofile_channel_userprofileid_channelid_pk
+  unique (userprofileid, channelid)
+);
+
+create table training_program_channel
+(
+  programchannelid bigserial not null
+    constraint training_program_channel_programchannelid_pk
+    primary key,
+  programid        bigint    not null,
+  chanelid         bigint    not null
+);
+
+alter table fcvplatform.training_userprofile
+  add column functionId bigint  constraint fk_userprofile_function references training_function(functionId);

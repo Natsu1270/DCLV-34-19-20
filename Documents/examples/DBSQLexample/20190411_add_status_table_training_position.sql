@@ -1,0 +1,1 @@
+ALTER TABLE fcvplatform.training_position ADD status int DEFAULT 1 NULL;

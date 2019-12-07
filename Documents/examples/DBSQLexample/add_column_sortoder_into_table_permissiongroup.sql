@@ -1,0 +1,1 @@
+ALTER TABLE fcvplatform.permissiongroup ADD sortorder int DEFAULT 0 NULL;

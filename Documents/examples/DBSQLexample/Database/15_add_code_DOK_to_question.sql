@@ -1,0 +1,5 @@
+SET search_path TO TrainingSystem;
+
+ALTER TABLE Question ADD COLUMN code VARCHAR(50) NOT NULL;
+ALTER TABLE Question ADD CONSTRAINT question_code_key UNIQUE (code);
+ALTER TABLE Question ADD COLUMN DOK INTEGER DEFAULT 1;
